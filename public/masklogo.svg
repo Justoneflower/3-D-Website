@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
+  <!-- Background is black (hidden), logo shape is white (reveals video) -->
+  <rect width="500" height="200" fill="black"></rect>
+  
+  <!-- ETMN logo text -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Sekuya, sans-serif" font-size="120" font-weight="bold" fill="white">
+    ETMN
+  </text>
+</svg>
