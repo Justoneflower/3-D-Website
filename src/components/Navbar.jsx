@@ -1,7 +1,6 @@
 import React from "react";
 import "./Navbar.css";
 
-
 const Navbar = () => {
   const links = [
     "Home",
@@ -15,14 +14,22 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="nav-grid">
-        {/* Left: Logo Area */}
+        
+        {/* ===== Left: Hamburger + Logo ===== */}
         <div className="nav-left">
-          {/* Space reserved for future logo */}
+          {/* Hamburger (mobile only via CSS) */}
+          <div className="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          {/* Logo */}
           <div className="logo-holder"></div>
           <div className="logo-text">ETMN</div>
         </div>
 
-        {/* Center: Navigation */}
+        {/* ===== Center: Navigation (desktop) ===== */}
         <nav className="nav-center">
           <ul className="nav-links">
             {links.map((item, index) => (
@@ -31,7 +38,7 @@ const Navbar = () => {
           </ul>
         </nav>
 
-        {/* Right */}
+        {/* ===== Right: Search + CTA ===== */}
         <div className="nav-right">
           <input
             type="text"
@@ -40,11 +47,10 @@ const Navbar = () => {
           />
           <button className="quote-btn">Request A Quote</button>
         </div>
+
       </div>
     </header>
   );
 };
 
 export default Navbar;
-
-
